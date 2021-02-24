@@ -16,7 +16,6 @@ void uart_init()
 	if (HAL_UART_Init(&huart2) != HAL_OK) while(1);
 }
 
-//HAL_UART_Init poziva ovu funkciju, te ju je potrebno implementirati
 void HAL_UART_MspInit(UART_HandleTypeDef *huart)
 {
 	//enabling the clock
