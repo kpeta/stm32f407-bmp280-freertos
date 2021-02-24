@@ -25,7 +25,7 @@ void HAL_I2C_MspInit(I2C_HandleTypeDef* hi2c)
   __HAL_RCC_I2C1_CLK_ENABLE();
 
   GPIO_InitTypeDef GPIO_InitStruct = {0};
-  if(hi2c->Instance==I2C1) //probaj bez ovoga
+  if(hi2c->Instance==I2C1) 
   {
     /* PB6     ------> I2C1_SCL
        PB7     ------> I2C1_SDA */
