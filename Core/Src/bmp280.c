@@ -140,7 +140,6 @@ bool bmp280_read_fixed(BMP280_HandleTypedef *dev, int32_t *temperature, uint32_t
 	int32_t adc_temp;
 	uint8_t data[8];
 
-	// Need to read in one sequence to ensure they match.
 	size_t size = 6;
 	HAL_I2C_Mem_Read(dev->i2c, dev->addr << 1, 0xf7, 1, data, size, 5000);
 

@@ -8,12 +8,14 @@
             "defines": [
                 "_DEBUG",
                 "UNICODE",
-                "_UNICODE"
+                "_UNICODE",
+                "STM32F407xx",
+                "USE_HAL_DRIVER"
             ],
             "cStandard": "gnu11",
             "cppStandard": "c++17",
             "intelliSenseMode": "gcc-arm",
-            "compilerPath": "C:/gnu-arm/bin/arm-none-eabi-gcc.exe",
+            "compilerPath": "/usr/bin/arm-none-eabi-gcc",
             "compilerArgs": [
                 "-mcpu=cortex-m4",
                 "-mthumb"
